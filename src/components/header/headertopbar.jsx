@@ -1,4 +1,7 @@
 import blog from "../../assets/logo.svg";
+import Company from "./menu.jsx/company";
+import Connect from "./menu.jsx/connect";
+import Product from "./menu.jsx/product";
 
 const HeaderTopBar = () => {
   return (
