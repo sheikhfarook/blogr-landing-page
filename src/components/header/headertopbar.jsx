@@ -7,7 +7,9 @@ const HeaderTopBar = () => {
   return (
     <div className="bg-gradient-to-r from-[#ff8f71] to-[#ff3e55]">
       <div className="blog ">
-        <div className="flex gap-[5rem] items-center p-10 text-white text-[16px] font-[700]">
+        <div
+          className="flex gap-[5rem] items-center p-10 text-white text-[16px] font-[700]
+        font-ubuntu">
           <div>
             <img className="" src={blog} alt="" />
           </div>
