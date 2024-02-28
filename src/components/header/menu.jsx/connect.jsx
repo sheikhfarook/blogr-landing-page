@@ -1,5 +1,5 @@
 const Connect = () => {
-  return <div></div>;
+  return <div>connect</div>;
 };
 
 export default Connect;
