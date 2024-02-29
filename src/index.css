@@ -11,6 +11,8 @@
     background-size: 1300px;
     height: 600px;
     background-repeat: no-repeat;
+
+    border-bottom-left-radius: 6.2rem;
   }
   /* background-position: top -63rem right -62rem; */
   /* background-size: 2500px; */
