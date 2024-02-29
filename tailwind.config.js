@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         ubuntu: ["Ubuntu"],
+        overpass: ["Overpass"],
       },
     },
   },
