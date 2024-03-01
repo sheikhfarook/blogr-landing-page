@@ -1,4 +1,5 @@
 import editor from "../../assets/illustration-editor-desktop.svg";
+import StateOfArt from "./stateofart";
 
 const FutureDesigned = () => {
   const future = [
@@ -14,7 +15,7 @@ const FutureDesigned = () => {
     },
   ];
   return (
-    <div className="pattern">
+    <div>
       <div
         className="w-[399px] h-[51px] text-[#1f3e5a] font-overpass 
       text-[40px] font-[600] text-center tracking-[-1.2px] m-auto mt-[8rem]
@@ -51,6 +52,7 @@ const FutureDesigned = () => {
           />
         </div>
       </div>
+      <StateOfArt />
     </div>
   );
 };
