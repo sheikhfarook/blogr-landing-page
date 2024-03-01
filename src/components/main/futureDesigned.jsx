@@ -1,11 +1,12 @@
 import editor from "../../assets/illustration-editor-desktop.svg";
 import StateOfArt from "./stateofart";
+import Tool from "./tool";
 
 const FutureDesigned = () => {
   const future = [
     {
       id: 1,
-      headline: "Introducing an extensible editor",
+      headline: "Introducing an extensible editor ",
       para: "Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.",
     },
     {
@@ -53,6 +54,7 @@ const FutureDesigned = () => {
         </div>
       </div>
       <StateOfArt />
+      <Tool />
     </div>
   );
 };
