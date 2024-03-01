@@ -62,10 +62,12 @@
   }
   /* background-position: top -78rem right -73rem; */
 }
-/* .pattern {
-  background-image: url(../src/assets/bg-pattern.svg);
+/* @media (min-width: 640px) and (max-width: 767px) { */
+.pattern {
+  background-image: url(../src/assets/bg-pattern-circles.svg);
   background-repeat: no-repeat;
-  background-size: 880px;
-  height: 1082px;
-  background-position: center left 53rem;
-} */
+  background-size: 1014px;
+  height: 400px;
+  background-position: top -32rem left -13.9rem;
+}
+/* } */
