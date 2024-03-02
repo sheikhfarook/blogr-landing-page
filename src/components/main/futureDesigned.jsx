@@ -24,6 +24,7 @@ const FutureDesigned = () => {
         Designed for the future
       </div>
       <div className="flex justify-evenly items-center max-sm:flex-col-reverse">
+      <div
         <div>
           {future?.map((topic, index) => (
             <div
