@@ -16,11 +16,17 @@ const Tool = () => {
   ];
   return (
     <div className="mt-[10rem] max-sm:mt-[5rem] max-sm:mb-[-10rem]">
-      <div className="relative flex justify-evenly items-center max-sm:flex-col">
-        <div className="relative right-[30rem]">
+      <div
+        className="lg:relative flex justify-evenly items-center max-sm:flex-col md:flex-col
+      lg:flex-row 2xl:m-auto 2xl:justify-around ">
+        <div className="lg:relative lg:right-[12rem] xl:right-[23.5rem] 2xl:right-0">
           <img
-            className="w-[950px]  
-             max-sm:hidden"
+            className="lg:w-[950px]  
+             max-sm:hidden
+             md:w-[600px] md:m-auto md:justify-center
+             lg:ml-20 
+             xl:ml-0
+             "
             src={laptop}
             alt=""
           />
@@ -30,19 +36,22 @@ const Tool = () => {
           {future?.map((topics, index) => (
             <div
               key={topics?.id}
-              className={` ${
+              className={`lg:mr-10 xl:ml-[-24rem] 2xl:ml-0 ${
                 index === 0 ? "mt-[7rem] " : index === 1 ? "mt-14 " : 0
               }`}>
               <div
-                className="h-[41px] w-[540px] text-[#1f3e5a] font-overpass 
-              text-[28px] font-[600] leading-[28px]
-               max-sm:w-[318px] max-sm:h-[66px] max-sm:text-center max-sm:m-auto  ">
+                className="h-[41px] text-[#1f3e5a] font-overpass 
+               font-[600] leading-[28px]
+               max-sm:w-[318px] max-sm:h-[66px] max-sm:text-center max-sm:m-auto 
+                md:text-center lg:text-left lg:w-[400px] lg:text-[20px]
+                 xl:text-[28px] xl:w-[540px]">
                 {topics?.headline}
               </div>
               <div
-                className="w-[540px] h-[154px] text-[#4c5862] font-overpass
+                className=" h-[154px] text-[#4c5862] font-overpass
               text-[16px] font-[300] leading-[28px] tracking-[0.5px]
-               max-sm:w-[318px] max-sm:h-[252px] max-sm:text-center">
+               max-sm:w-[318px] max-sm:h-[252px] max-sm:text-center md:text-center md:w-[600px]
+               lg:text-left lg:w-[400px] xl:w-[540px]">
                 {topics?.para}
               </div>
             </div>
