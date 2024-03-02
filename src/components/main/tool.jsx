@@ -1,4 +1,5 @@
-import laptop from "../../assets/illustration-laptop-mobile.svg";
+import mobile_laptop from "../../assets/illustration-laptop-mobile.svg";
+import laptop from "../../assets/illustration-laptop-desktop.svg";
 
 const Tool = () => {
   const future = [
@@ -14,14 +15,16 @@ const Tool = () => {
     },
   ];
   return (
-    <div className="mt-[10rem]">
-      <div className="flex justify-evenly items-center max-sm:flex-col-reverse">
-        <div className="">
+    <div className="mt-[10rem] max-sm:mt-[5rem] max-sm:mb-[-10rem]">
+      <div className="relative flex justify-evenly items-center max-sm:flex-col">
+        <div className="relative right-[30rem]">
           <img
-            className="w-[580px] max-sm:w-[326px] max-sm:justify-center max-sm:m-auto"
+            className="w-[950px]  
+             max-sm:hidden"
             src={laptop}
             alt=""
           />
+          <img className="mb-[-5rem] md:hidden" src={mobile_laptop} alt="" />
         </div>
         <div>
           {future?.map((topics, index) => (
@@ -32,7 +35,8 @@ const Tool = () => {
               }`}>
               <div
                 className="h-[41px] w-[540px] text-[#1f3e5a] font-overpass 
-              text-[28px] font-[600] leading-[28px] max-sm:w-[318px] max-sm:h-[66px] max-sm:text-center max-sm:m-auto  ">
+              text-[28px] font-[600] leading-[28px]
+               max-sm:w-[318px] max-sm:h-[66px] max-sm:text-center max-sm:m-auto  ">
                 {topics?.headline}
               </div>
               <div
