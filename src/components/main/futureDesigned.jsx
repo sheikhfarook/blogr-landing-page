@@ -50,7 +50,7 @@ const FutureDesigned = () => {
                 <div
                   className="h-[154px] text-[#4c5862] font-overpass 
                 text-[16px] font-[300] leading-[28px] tracking-[0.5px] max-sm:w-[318px] 
-                max-sm:h-[252px] max-sm:text-center 
+                max-sm:h-[252px] max-sm:text-center md:w-[600px]
                 md:text-center lg:text-left lg:w-[400px] xl:w-[540px]">
                   {topic?.para}
                 </div>
@@ -71,8 +71,8 @@ const FutureDesigned = () => {
         <img className="md:hidden mt-10 -mb-10" src={mobile_editor} alt="" />
       </div>
 
-      <StateOfArt />
-      {/* <Tool /> */}
+      {/* <StateOfArt /> */}
+      <Tool />
     </div>
   );
 };
