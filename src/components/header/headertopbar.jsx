@@ -21,6 +21,20 @@ const HeaderTopBar = () => {
               />
             </div>
             {/* menu bar */}
+            {/* mobile device responsive */}
+            <div className="flex gap-10  md:hidden">
+              <div>
+                <Product />
+              </div>
+              <div>
+                <Company />
+              </div>
+              <div>
+                <Connect />
+              </div>
+              {/* right side  */}
+            </div>
+            {/* all device responsive */}
             <div className="flex gap-10  max-sm:hidden">
               <div>
                 <Product />
