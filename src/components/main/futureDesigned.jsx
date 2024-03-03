@@ -71,7 +71,7 @@ const FutureDesigned = () => {
         <img className="md:hidden mt-10 -mb-10" src={mobile_editor} alt="" />
       </div>
 
-      {/* <StateOfArt /> */}
+      <StateOfArt />
       <Tool />
     </div>
   );

@@ -11,7 +11,6 @@
     background-size: 1300px;
     height: 600px;
     background-repeat: no-repeat;
-
     border-bottom-left-radius: 6.2rem;
   }
   /* background-position: top -63rem right -62rem; */
@@ -26,7 +25,6 @@
   .blog {
     background-image: url(../src/assets/bg-pattern-intro-desktop.svg);
     background-position: top 38% right 68%;
-
     background-size: 1200px;
     height: 600px;
     background-repeat: no-repeat;
@@ -62,12 +60,22 @@
   }
   /* background-position: top -78rem right -73rem; */
 }
-/* @media (min-width: 640px) and (max-width: 767px) { */
-.pattern {
-  background-image: url(../src/assets/bg-pattern-circles.svg);
-  background-repeat: no-repeat;
-  background-size: 1014px;
-  height: 400px;
-  background-position: top -32rem left -13.9rem;
+@media (min-width: 640px) and (max-width: 767px) {
+  .pattern {
+    background-image: url(../src/assets/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 970px;
+    height: 100%;
+    background-position: top -32rem left -13.9rem;
+  }
 }
-/* } */
+@media (max-width: 639px) {
+  .pattern {
+    background-image: url(../src/assets/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 602px;
+    height: 100%;
+    background-position: top -15rem left -6.9rem;
+    border-top-right-radius: 6rem;
+  }
+}
