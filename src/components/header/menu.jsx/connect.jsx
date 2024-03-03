@@ -1,27 +1,45 @@
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+// import arrows from "../../../assets/icon-arrow-dark.svg";
 import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
 } from "@chakra-ui/react";
-
 import arrow from "../../../assets/icon-arrow-light.svg";
 
 const Connect = () => {
   return (
     <div>
       <div>
-        <div>
+        <div className="md:hidden">
+          <Accordion allowMultiple>
+            <AccordionItem>
+              <h2>
+                <AccordionButton color="#ff8f71">
+                  <Box color="black">
+                    <div className="">company</div>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel opacity="0.5">
+                <div>Contact</div>
+                <div>Newsletter</div>
+                <div>Linkedin</div>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </div>
+        <div className="max-sm:hidden">
           <Menu>
             <MenuButton _hover={{ textDecoration: "underline" }}>
               <div className="flex place-items-end   gap-2  ">
                 <div>connect</div>
                 <div>
-                  <img className="mb-0.5" src={arrow} alt="" />
+                  <img className="mb-0.5 max-sm:hidden" src={arrow} alt="" />
                 </div>
               </div>
             </MenuButton>
